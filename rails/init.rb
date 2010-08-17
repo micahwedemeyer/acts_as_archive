@@ -1,5 +1,4 @@
-require File.expand_path("#{File.dirname(__FILE__)}/../require")
-Require.rails_init!
+require 'acts_as_archive'
 
 ActiveRecord::Base.send(:include, ActsAsArchive::Base)
 ActiveRecord::Migration.send(:include, ActsAsArchive::Migration)

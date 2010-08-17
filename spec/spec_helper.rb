@@ -1,7 +1,15 @@
-require File.expand_path("#{File.dirname(__FILE__)}/../require")
-Require.spec_helper!
+require 'rubygems'
+
+gem 'activerecord', '~> 2.3.0' 
+require 'active_record'
+
+require 'logger'
+require 'yaml'
+require 'pp'
+require 'rails/init'
 
 Spec::Runner.configure do |config|
+  SPEC = File.dirname(__FILE__) unless defined?(SPEC)
 end
 
 def db_type

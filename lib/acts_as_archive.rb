@@ -1,5 +1,10 @@
-require File.expand_path("#{File.dirname(__FILE__)}/../require")
-Require.lib!
+require "acts_as_archive/base"
+require "acts_as_archive/base/adapters/mysql"
+require "acts_as_archive/base/adapters/postgresql"
+require "acts_as_archive/base/destroy"
+require "acts_as_archive/base/restore"
+require "acts_as_archive/base/table"
+require "acts_as_archive/migration"
 
 module ActsAsArchive
   
