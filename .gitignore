@@ -5,3 +5,4 @@ pkg
 spec/db/log/*.log
 tmp
 .gemspec
+.rvmrc
